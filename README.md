@@ -10,7 +10,6 @@ Proyek ini mengklasifikasikan sumber gelatin (Babi, Sapi, Ikan) berdasarkan data
 ├── grafik waktu vs tegangan.py    # Visualisasi Raw Data vs Z-Score (untuk Bab 4 skripsi)
 ├── modul_1.py                     # Preprocessing, sliding window, normalisasi (Z-score)
 ├── modul_2.py                     # Training & evaluasi model 1D-CNN vs GRU
-├── index.html                     # Demo klasifikasi interaktif (GitHub Pages)
 └── requirements.txt
 ```
 
@@ -32,9 +31,6 @@ Skrip independen, tidak bergantung pada `modul_1.py` maupun `modul_2.py`. Mengam
 - Melatih dan membandingkan model **1D-CNN** dan **GRU** dengan data yang identik.
 - Menggunakan Early Stopping (monitor `val_loss`, patience=15) untuk mencegah overfitting.
 - Output otomatis: confusion matrix, kurva akurasi, kurva loss (disimpan sebagai `.png`), dan classification report.
-
-### Demo Web: `index.html`
-Model GRU hasil pelatihan diekspor ke TensorFlow.js dan disematkan langsung ke halaman ini, jadi seluruh inferensi berjalan di peramban tanpa server. Diaktifkan lewat GitHub Pages agar bisa dicoba siapa saja.
 
 ## Cara Menjalankan
 
