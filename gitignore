@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Output hasil training (biasanya tidak perlu di-commit, ukurannya besar & mudah dihasilkan ulang)
+*.png
+*.h5
+*.keras
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
